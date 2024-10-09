@@ -36,5 +36,5 @@ Here are a few highlighted projects from my portfolio:
 Feel free to reach out if you have any questions or would like to collaborate!
 
 - Email: [priyanshushukla5555@gmail.com](mailto:priyanshushukla5555@gmail.com)
-- LinkedIn: [[Your LinkedIn Profile](https://www.linkedin.com/in/prianshukla/)]
-- GitHub: [[Your GitHub Profile](https://github.com/your-username)]
+- LinkedIn: [[LinkedIn Profile](https://www.linkedin.com/in/prianshukla/)]
+- GitHub: [[GitHub Profile](https://github.com/csePriyanshu)]
