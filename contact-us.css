@@ -1,0 +1,247 @@
+.contact-container{
+    z-index: 145;
+    margin-left: 0;
+    position: fixed;
+    top: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+.contact-me{
+    /* border: 2px solid black; */
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #0a192f;
+    color: white;
+    filter: drop-shadow(0 0px 7px #57cbff);
+    /* color: white; */
+    width: 70%;
+    font-size: 20px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.contact-header img {
+    max-width: 50px;
+    max-height: 50px;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.contact-header p {
+    line-height: 30px;
+    letter-spacing: 1.3px;
+}
+
+.contact-header h3 {
+    text-decoration: underline;
+}
+
+.contact-body {
+    border: 2px solid gray;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-color: beige;
+    color: dimgray;
+    border-radius: 8px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.contact-left {
+    border-right: 2px double gray;
+}
+
+.contact-left form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+}
+
+label {
+    font-weight: 700;
+}
+
+#name,
+#phone {
+    width: 70%;
+    height: 35px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: transparent;
+}
+
+#email,
+#organisation {
+    width: 90%;
+    height: 35px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: transparent;
+}
+
+#message {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: transparent;
+}
+
+.textarea {
+    grid-column-start: -3;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: 50% 50%;
+}
+
+.textarea textarea {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100px;
+}
+
+#submit {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #57cbff;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    transition: all 100ms ease-in-out;
+}
+
+#submit:active {
+    box-shadow: 1px 1px 4px black;
+}
+
+#reset {
+    margin: 10px auto;
+    padding: 10px 20px;
+    /* background-color: ; */
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    transition: all 100ms ease-in-out;
+}
+
+#reset:active {
+    box-shadow: 1px 1px 4px black;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.contact-detail {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.contact-detail span {
+    color: dimgray;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-right {
+    /* text-align: center; */
+    margin-left: 30px;
+    /* font-weight: 500; */
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin: 10px;
+    color: #708090;
+    font-size: 30px;
+}
+
+.contact-links i:hover {
+    transform: scale(1.2);
+}
+
+.contact-container {
+    transform: scale(0);
+    position: absolute;
+    margin: 0 auto;
+}
+
+@media (max-width:900px) {
+    .contact-body {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .contact-left form {
+        display: block;
+    }
+
+    .contact-me {
+        width: 98vw;
+        padding: 20px 10px;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .contact-header p {
+        display: none;
+    }
+
+    #name,
+    #phone {
+        width: 90%;
+    }
+
+    .textarea {
+        display: block;
+    }
+
+    .submit {
+        display: flex;
+        column-gap: 30px;
+        flex-direction: row-reverse;
+    }
+
+    #submit,
+    #reset {
+        width: 40%;
+    }
+
+    .contact-left {
+        border-right: none;
+    }
+}
